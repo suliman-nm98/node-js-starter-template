@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Import routes
-const apiRoutes = require("../routes");
+const apiRoutes = require("./routes");
 app.use("/api", apiRoutes);
 
 app.listen(port, () => {
